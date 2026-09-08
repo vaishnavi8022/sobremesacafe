@@ -1,4 +1,6 @@
 import "./App.css";
+import cafeInterior from "./assets/cafe-interior.jpg";
+import cafeCounter from "./assets/cafe-counter.jpg";
 
 function App() {
   return (
