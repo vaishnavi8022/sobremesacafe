@@ -780,3 +780,20 @@ a {
     gap: 12px;
   }
 }
+
+/* ==============================
+   GOOGLE MAPS LINK
+============================== */
+
+.visit-card-link {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.visit-card-link:hover {
+  background: rgba(48, 39, 31, 0.05);
+}
+
+.back-top-button {
+  margin-top: 15px;
+}

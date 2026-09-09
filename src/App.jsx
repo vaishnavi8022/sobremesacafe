@@ -102,6 +102,10 @@ function App() {
     },
   ];
 
+  // Google Maps search link
+  const googleMapsUrl =
+    "https://www.google.com/maps/search/?api=1&query=Sobremesa+Cafe+Bakehouse+Kitchen+Jubilee+Hills+Hyderabad";
+
   return (
     <div className="website">
 
@@ -146,7 +150,13 @@ function App() {
               Explore Menu
             </a>
 
-            <a href="#visit" className="secondary-button">
+            {/* GOOGLE MAPS */}
+            <a
+              href={googleMapsUrl}
+              className="secondary-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Find Us
             </a>
           </div>
@@ -302,17 +312,26 @@ function App() {
         </div>
 
         <div className="visit-grid">
-          <div className="visit-card">
+
+          {/* ADDRESS - GOOGLE MAPS */}
+          <a
+            href={googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="visit-card visit-card-link"
+          >
             <span className="visit-label">ADDRESS</span>
+
             <p>
               Jubilee Hills
               <br />
               Hyderabad, Telangana
             </p>
-          </div>
+          </a>
 
           <div className="visit-card">
             <span className="visit-label">HOURS</span>
+
             <p>
               Monday — Sunday
               <br />
@@ -322,15 +341,27 @@ function App() {
 
           <div className="visit-card">
             <span className="visit-label">CONTACT</span>
+
             <p>
               +91 00000 00000
               <br />
               hello@sobremesa.com
             </p>
           </div>
+
         </div>
 
-        <a href="#top" className="visit-button">
+        {/* GOOGLE MAPS BUTTON */}
+        <a
+          href={googleMapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="visit-button"
+        >
+          Find Us on Google Maps ↗
+        </a>
+
+        <a href="#top" className="visit-button back-top-button">
           Back to top ↑
         </a>
       </section>
