@@ -370,7 +370,7 @@ function App() {
       <footer className="footer">
         <div className="footer-logo">SOBREMESA</div>
 
-        <p>A place to linger.</p>
+        <p>A place to slow down.</p>
 
         <div className="footer-bottom">
           <span>© 2021 Sobremesa</span>
