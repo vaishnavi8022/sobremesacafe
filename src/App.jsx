@@ -37,7 +37,7 @@ function App() {
       <section className="hero">
 
         <img
-          src="/src/assets/cafe-interior.jpg"
+          src={cafeInterior}
           alt="Sobremesa Cafe interior"
           className="hero-image"
         />
@@ -118,7 +118,7 @@ function App() {
         <div className="intro-image">
 
           <img
-            src="/src/assets/cafe-counter.jpg"
+            src={cafeCounter}
             alt="Sobremesa cafe counter"
           />
 
@@ -215,11 +215,157 @@ function App() {
 
     <div className="menu-item">
       <div>
-        <h3>Banana Bread</h3>
-        <p>Moist homemade banana bread with a delicate sweetness.</p>
+        <h3>Biscoff Tresleches</h3>
+        <p>Vanilla butter sponge soaked in three kinds of milk with lotus biscoff spread, biscoff chantilly, biscoff biscuit.</p>
       </div>
-      <span className="price">₹190</span>
+      <span className="price">399</span>
     </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Noisette</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">449</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Honey cake</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">399</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Love</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">449</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>lspahan</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">449</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>London Chocolate Caramel</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">449</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Classic Vanilla Burnt Basque Cheesecake</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">399</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Tiramisu</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">399</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Sugar Free Chocolate Delice</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">399</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Viral Kunafa Chocolate Tub</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">429</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Chocolate Brownie Cookie</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">189</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Vegan Levian Cookie</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">189</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Brioche Loaf</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">319</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Sourdough</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">299</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Multigrain Loaf</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">269</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Sourdough Focaccia</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">299</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Garlic Parsley Loaf</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">219</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Whole wheat Loaf</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">219</span>
+    </div>
+
+    <div className="menu-item">
+      <div>
+        <h3>Milk Bread Loaf</h3>
+        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
+      </div>
+      <span className="price">199</span>
+    </div>
+
+    
 
   </div>
 
@@ -237,43 +383,206 @@ function App() {
 
     <div className="menu-item">
       <div>
-        <h3>Penne Arrabbiata</h3>
+        <h3>Greek Choice Pizza</h3>
         <p>Al dente penne tossed in a rich tomato and chilli sauce.</p>
       </div>
-      <span className="price">₹380</span>
+      <span className="price">675</span>
     </div>
 
     <div className="menu-item">
       <div>
-        <h3>Parmesan & Cream Pasta</h3>
+        <h3>wild mushroom pizza(9 inches)</h3>
         <p>Creamy pasta finished with parmesan and cracked pepper.</p>
       </div>
-      <span className="price">₹420</span>
+      <span className="price">675</span>
     </div>
 
     <div className="menu-item">
       <div>
-        <h3>Balsamic Sweet Potato Sandwich</h3>
+        <h3>Margherita Pizza</h3>
         <p>Roasted sweet potato, greens and balsamic dressing.</p>
       </div>
-      <span className="price">₹340</span>
+      <span className="price">610</span>
     </div>
 
     <div className="menu-item">
       <div>
-        <h3>Classic Grilled Sandwich</h3>
+        <h3>The BBQ Smoker Pizza</h3>
         <p>Golden toasted bread with a warm, comforting filling.</p>
       </div>
-      <span className="price">₹320</span>
+      <span className="price">695</span>
     </div>
 
     <div className="menu-item">
       <div>
-        <h3>House Salad</h3>
+        <h3>Hot Olive Pizza</h3>
         <p>Fresh seasonal greens, vegetables and our house dressing.</p>
       </div>
-      <span className="price">₹350</span>
+      <span className="price">575</span>
     </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Pesto Burrata Pizza</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">610</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Penne Arrabiata Pasta</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">360</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Parmesan and Cream Pasta</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">360</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Spaghetti Aglio Olio Pasta</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">360</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Pesto Chicken Risotto</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">485</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Four Cheese Ravioli</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">485</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Lasagne Bolognese</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">675</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Balsamic Sweet Potato Sandwich</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">395</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Chicken Gochujang Sandwich</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">420</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Paneer Cheese Burger</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">450</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Smash Lamb Burger</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">545</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Spanish with Artichoke Lasagne</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">510</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Grilled Chicken Steak</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">510</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Chicken Katsu Fried Rice</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">515</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Paneer Kastu Fried Rice</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">495</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Veggies Croquettes</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">325</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Mushroom and Chilli Phyllo Parcels</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">375</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Burnt Chilli Paneer Skewers</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">375</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Honey Basil Chicken</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">410</span>
+    </div>
+
+     <div className="menu-item">
+      <div>
+        <h3>Butter Garlic Prawns</h3>
+        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
+      </div>
+      <span className="price">420</span>
+    </div>
+
+     
+    
 
   </div>
 
@@ -507,7 +816,7 @@ function App() {
         <div className="visit-image">
 
           <img
-            src="/src/assets/cafe-interior.jpg"
+            src={cafeInterior}
             alt="Inside Sobremesa Cafe"
           />
 
