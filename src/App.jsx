@@ -138,9 +138,7 @@ function App() {
           <p className="eyebrow">CAFÉ • BAKEHOUSE • KITCHEN</p>
 
           <h1>
-            A place
-            <br />
-            <span>to linger.</span>
+            A place for
           </h1>
 
           <p className="hero-description">
