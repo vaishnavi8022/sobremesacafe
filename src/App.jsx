@@ -1,4 +1,5 @@
 import "./App.css";
+import sobremesaLogo from "./assets/sobremesa-logo.jpeg";
 
 function App() {
   const menuCategories = [
@@ -111,7 +112,10 @@ function App() {
 
       {/* NAVBAR */}
       <nav className="navbar">
-        <div className="logo">SOBREMESA</div>
+        <div className="logo">
+  <img src={sobremesaLogo} alt="Sobremesa logo" />
+  <span>SOBREMESA</span>
+</div>
 
         <div className="nav-links">
           <a href="#about">About</a>
@@ -163,7 +167,7 @@ function App() {
         </div>
 
         <div className="hero-bottom">
-          <span>EST. 2026</span>
+          <span>EST. 2021</span>
           <span>HYDERABAD</span>
         </div>
       </section>
@@ -323,9 +327,7 @@ function App() {
             <span className="visit-label">ADDRESS</span>
 
             <p>
-              Jubilee Hills
-              <br />
-              Hyderabad, Telangana
+              Road Number 31, Aditya Enclave, Jubilee Hills, Hyderabad
             </p>
           </a>
 
@@ -373,7 +375,7 @@ function App() {
         <p>A place to linger.</p>
 
         <div className="footer-bottom">
-          <span>© 2026 Sobremesa</span>
+          <span>© 2021 Sobremesa</span>
           <span>Made with intention.</span>
         </div>
       </footer>

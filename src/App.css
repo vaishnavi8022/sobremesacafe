@@ -51,7 +51,21 @@ a {
   z-index: 1000;
 }
 
+/* LOGO WITH IMAGE */
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo span {
   font-family: 'Cormorant Garamond', serif;
   font-size: 27px;
   letter-spacing: 4px;
@@ -687,9 +701,15 @@ a {
     height: 70px;
   }
 
-  .logo {
+  /* MOBILE LOGO */
+  .logo span {
     font-size: 22px;
     letter-spacing: 3px;
+  }
+
+  .logo img {
+    width: 27px;
+    height: 27px;
   }
 
   .nav-button {
@@ -780,6 +800,7 @@ a {
     gap: 12px;
   }
 }
+
 
 /* ==============================
    GOOGLE MAPS LINK
