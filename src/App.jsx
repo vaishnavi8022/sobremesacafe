@@ -1,20 +1,113 @@
 import "./App.css";
-import cafeInterior from "./assets/cafe-interior.jpg";
-import cafeCounter from "./assets/cafe-counter.jpg";
 
 function App() {
+  const menuCategories = [
+    {
+      title: "Bakehouse",
+      subtitle: "Fresh from the oven",
+      items: [
+        {
+          name: "Butter Croissant",
+          description: "Classic French pastry with delicate, flaky layers",
+          price: "₹180",
+        },
+        {
+          name: "Pain au Chocolat",
+          description: "Buttery pastry layered with dark chocolate",
+          price: "₹220",
+        },
+        {
+          name: "Almond Croissant",
+          description: "Almond cream, toasted almonds and golden pastry",
+          price: "₹240",
+        },
+        {
+          name: "Cinnamon Roll",
+          description: "Soft cinnamon pastry with a delicate glaze",
+          price: "₹210",
+        },
+        {
+          name: "Banana Bread",
+          description: "Moist house-baked banana bread",
+          price: "₹190",
+        },
+      ],
+    },
+    {
+      title: "Kitchen",
+      subtitle: "Made to linger over",
+      items: [
+        {
+          name: "Penne Arrabbiata",
+          description: "Penne, tomato, garlic, chilli and fresh herbs",
+          price: "₹380",
+        },
+        {
+          name: "Parmesan & Cream Pasta",
+          description: "Creamy parmesan sauce with fresh herbs",
+          price: "₹420",
+        },
+        {
+          name: "Balsamic Sweet Potato Sandwich",
+          description: "Roasted sweet potato, greens and balsamic glaze",
+          price: "₹340",
+        },
+        {
+          name: "Classic Grilled Sandwich",
+          description: "Toasted sourdough, cheese and house seasoning",
+          price: "₹320",
+        },
+        {
+          name: "House Salad",
+          description: "Seasonal greens, vegetables and house dressing",
+          price: "₹350",
+        },
+      ],
+    },
+    {
+      title: "Coffee",
+      subtitle: "Slowly, always",
+      items: [
+        {
+          name: "Espresso",
+          description: "Rich, concentrated and beautifully balanced",
+          price: "₹160",
+        },
+        {
+          name: "Americano",
+          description: "Espresso with hot water",
+          price: "₹180",
+        },
+        {
+          name: "Cappuccino",
+          description: "Espresso, steamed milk and soft foam",
+          price: "₹220",
+        },
+        {
+          name: "Spanish Latte",
+          description: "Espresso, condensed milk and silky steamed milk",
+          price: "₹260",
+        },
+        {
+          name: "Iced Latte",
+          description: "Chilled espresso with smooth cold milk",
+          price: "₹240",
+        },
+        {
+          name: "Cold Coffee",
+          description: "Creamy chilled coffee, house style",
+          price: "₹250",
+        },
+      ],
+    },
+  ];
+
   return (
-    <div className="app">
+    <div className="website">
 
-      {/* =========================
-          NAVIGATION
-      ========================= */}
-
+      {/* NAVBAR */}
       <nav className="navbar">
-
-        <a href="#" className="logo">
-          SOBREMESA
-        </a>
+        <div className="logo">SOBREMESA</div>
 
         <div className="nav-links">
           <a href="#about">About</a>
@@ -26,71 +119,54 @@ function App() {
         <a href="#menu" className="nav-button">
           Explore Menu
         </a>
-
       </nav>
 
-
-      {/* =========================
-          HERO
-      ========================= */}
-
+      {/* HERO */}
       <section className="hero">
-
-        <img
-          src={cafeInterior}
-          alt="Sobremesa Cafe interior"
-          className="hero-image"
-        />
-
-        <div className="hero-overlay"></div>
+        <div className="hero-decoration hero-decoration-one"></div>
+        <div className="hero-decoration hero-decoration-two"></div>
 
         <div className="hero-content">
-
-          <p className="eyebrow">
-            CAFÉ • BAKEHOUSE • KITCHEN
-          </p>
+          <p className="eyebrow">CAFÉ • BAKEHOUSE • KITCHEN</p>
 
           <h1>
-            A place to
+            A place
+            <br />
+            <span>to linger.</span>
           </h1>
 
           <p className="hero-description">
-            Good food, warm coffee and conversations
-            that last a little longer.
+            Coffee, freshly baked pastries and good food —
+            <br />
+            made for slow mornings and long conversations.
           </p>
 
           <div className="hero-buttons">
-
-            <a href="#menu" className="button light-button">
+            <a href="#menu" className="primary-button">
               Explore Menu
             </a>
 
-            <a href="#visit" className="button transparent-button">
+            <a href="#visit" className="secondary-button">
               Find Us
             </a>
-
           </div>
-
         </div>
 
-        <div className="scroll-text">
-          SCROLL TO DISCOVER ↓
+        <div className="hero-bottom">
+          <span>EST. 2026</span>
+          <span>HYDERABAD</span>
         </div>
-
       </section>
 
+      {/* ABOUT */}
+      <section className="about-section" id="about">
+        <div className="about-small">
+          <span>01</span>
+          <span>OUR STORY</span>
+        </div>
 
-      {/* =========================
-          INTRO
-      ========================= */}
-
-      <section className="intro" id="about">
-
-        <div className="intro-text">
-
-          <p className="eyebrow dark">
-            WELCOME TO SOBREMESA
-          </p>
+        <div className="about-content">
+          <p className="section-label">A LITTLE SOMETHING</p>
 
           <h2>
             Come for the coffee.
@@ -98,760 +174,177 @@ function App() {
             <em>Stay for the feeling.</em>
           </h2>
 
-          <p className="body-text">
-            Tucked away in Jubilee Hills, Sobremesa is a café,
-            bakehouse and kitchen created for slow mornings,
-            long lunches and everything in between.
+          <p className="about-text">
+            Sobremesa is a café, bakehouse and kitchen created for
+            unhurried moments. A warm cup of coffee, something fresh
+            from the oven and nowhere else you need to be.
           </p>
 
-          <p className="body-text">
-            Step inside, find your favourite corner and let
-            the afternoon take its time.
+          <div className="about-line"></div>
+
+          <p className="about-note">
+            Take your time. You're here now.
           </p>
-
-          <a href="#menu" className="dark-link">
-            Discover Sobremesa →
-          </a>
-
         </div>
-
-        <div className="intro-image">
-
-          <img
-            src={cafeCounter}
-            alt="Sobremesa cafe counter"
-          />
-
-        </div>
-
       </section>
 
-
-     {/* =========================
-    MENU
-========================= */}
-
-<section className="menu-section" id="menu">
-
-  <div className="section-heading">
-
-    <p className="eyebrow dark">
-      FROM OUR KITCHEN
-    </p>
-
-    <h2>
-      Something for
-      <br />
-      <em>every mood.</em>
-    </h2>
-
-    <p className="body-text">
-      Freshly baked pastries, comforting plates
-      and coffee worth slowing down for.
-    </p>
-
-  </div>
-
-
-  {/* MENU CATEGORIES */}
-
-  <div className="menu-category-title">
-
-    <span>BAKEHOUSE</span>
-
-    <span>•</span>
-
-    <span>KITCHEN</span>
-
-    <span>•</span>
-
-    <span>COFFEE</span>
-
-  </div>
-
-
-  {/* =========================
-      BAKEHOUSE MENU
-  ========================= */}
-
-  <div className="menu-list">
-
-    <div className="menu-list-header">
-      <p>THE BAKEHOUSE</p>
-      <span>FRESHLY BAKED</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Walnut Brownie</h3>
-        <p>A rich, Fudge gluten-free brownie packed with crunchy walnuts</p>
-      </div>
-      <span className="price">269</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Milk Chocolate Brownie</h3>
-        <p>A rich, fudge gluten-free brownie with rich milk chocolate ganache.</p>
-      </div>
-      <span className="price">269</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Italian Ricotta Brownie</h3>
-        <p>A rich fudgy gluten-free brownie with ricotta cheese</p>
-      </div>
-      <span className="price">269</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Devil Chocolate Cake Pastry</h3>
-        <p>Devil chocolate sponge, sao palme 36% milk chocolate mousse and soft ganache, chocolaty nutty crunchy..</p>
-      </div>
-      <span className="price">399</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Biscoff Tresleches</h3>
-        <p>Vanilla butter sponge soaked in three kinds of milk with lotus biscoff spread, biscoff chantilly, biscoff biscuit.</p>
-      </div>
-      <span className="price">399</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Noisette</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">449</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Honey cake</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">399</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Love</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">449</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>lspahan</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">449</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>London Chocolate Caramel</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">449</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Classic Vanilla Burnt Basque Cheesecake</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">399</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Tiramisu</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">399</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Sugar Free Chocolate Delice</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">399</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Viral Kunafa Chocolate Tub</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">429</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Chocolate Brownie Cookie</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">189</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Vegan Levian Cookie</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">189</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Brioche Loaf</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">319</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Sourdough</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">299</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Multigrain Loaf</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">269</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Sourdough Focaccia</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">299</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Garlic Parsley Loaf</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">219</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Whole wheat Loaf</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">219</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Milk Bread Loaf</h3>
-        <p>Moist hazelnut sponge, milk chocolate mousse, hazelnut praline, chocolate hazelnut crunch.</p>
-      </div>
-      <span className="price">199</span>
-    </div>
-
-    
-
-  </div>
-
-
-  {/* =========================
-      KITCHEN MENU
-  ========================= */}
-
-  <div className="menu-list">
-
-    <div className="menu-list-header">
-      <p>THE KITCHEN</p>
-      <span>FROM OUR STOVE</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Greek Choice Pizza</h3>
-        <p>Al dente penne tossed in a rich tomato and chilli sauce.</p>
-      </div>
-      <span className="price">675</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>wild mushroom pizza(9 inches)</h3>
-        <p>Creamy pasta finished with parmesan and cracked pepper.</p>
-      </div>
-      <span className="price">675</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Margherita Pizza</h3>
-        <p>Roasted sweet potato, greens and balsamic dressing.</p>
-      </div>
-      <span className="price">610</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>The BBQ Smoker Pizza</h3>
-        <p>Golden toasted bread with a warm, comforting filling.</p>
-      </div>
-      <span className="price">695</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Hot Olive Pizza</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">575</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Pesto Burrata Pizza</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">610</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Penne Arrabiata Pasta</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">360</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Parmesan and Cream Pasta</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">360</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Spaghetti Aglio Olio Pasta</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">360</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Pesto Chicken Risotto</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">485</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Four Cheese Ravioli</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">485</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Lasagne Bolognese</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">675</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Balsamic Sweet Potato Sandwich</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">395</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Chicken Gochujang Sandwich</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">420</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Paneer Cheese Burger</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">450</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Smash Lamb Burger</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">545</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Spanish with Artichoke Lasagne</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">510</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Grilled Chicken Steak</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">510</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Chicken Katsu Fried Rice</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">515</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Paneer Kastu Fried Rice</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">495</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Veggies Croquettes</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">325</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Mushroom and Chilli Phyllo Parcels</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">375</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Burnt Chilli Paneer Skewers</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">375</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Honey Basil Chicken</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">410</span>
-    </div>
-
-     <div className="menu-item">
-      <div>
-        <h3>Butter Garlic Prawns</h3>
-        <p>Fresh seasonal greens, vegetables and our house dressing.</p>
-      </div>
-      <span className="price">420</span>
-    </div>
-
-     
-    
-
-  </div>
-
-
-  {/* =========================
-      COFFEE MENU
-  ========================= */}
-
-  <div className="menu-list">
-
-    <div className="menu-list-header">
-      <p>THE COFFEE BAR</p>
-      <span>BREWED WITH CARE</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Espresso</h3>
-        <p>Rich, bold and beautifully balanced.</p>
-      </div>
-      <span className="price">₹160</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Americano</h3>
-        <p>Espresso softened with hot water for a clean finish.</p>
-      </div>
-      <span className="price">₹180</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Cappuccino</h3>
-        <p>Espresso with silky steamed milk and soft foam.</p>
-      </div>
-      <span className="price">₹220</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Spanish Latte</h3>
-        <p>Espresso, steamed milk and condensed milk.</p>
-      </div>
-      <span className="price">₹260</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Iced Latte</h3>
-        <p>Chilled espresso and milk served over ice.</p>
-      </div>
-      <span className="price">₹240</span>
-    </div>
-
-    <div className="menu-item">
-      <div>
-        <h3>Cold Coffee</h3>
-        <p>Creamy, chilled and perfect for slow afternoons.</p>
-      </div>
-      <span className="price">₹250</span>
-    </div>
-
-  </div>
-
-
-  <p className="menu-note">
-    Prices are inclusive of applicable taxes. Please ask our team about
-    seasonal specials and today's offerings.
-  </p>
-
-</section>
-
-     
-
-
-      {/* =========================
-          SIGNATURES
-      ========================= */}
-
-      <section className="signatures">
-
-        <div className="signature-image">
-
-          <img
-            src="/src/assets/cafe-counter.jpg"
-            alt="Sobremesa bakery counter"
-          />
-
-        </div>
-
-
-        <div className="signature-content">
-
-          <p className="eyebrow dark">
-            A FEW FAVOURITES
-          </p>
+      {/* MENU */}
+      <section className="menu-section" id="menu">
+        <div className="menu-intro">
+          <p className="section-label">THE MENU</p>
 
           <h2>
-            Made for
+            Something for
             <br />
-            <em>slow afternoons.</em>
-          </h2>
-
-          <div className="food-list">
-
-            <div className="food-item">
-              <span>Penne Arrabbiata</span>
-              <span>•••</span>
-            </div>
-
-            <div className="food-item">
-              <span>Parmesan & Cream Pasta</span>
-              <span>•••</span>
-            </div>
-
-            <div className="food-item">
-              <span>Balsamic Sweet Potato Sandwich</span>
-              <span>•••</span>
-            </div>
-
-            <div className="food-item">
-              <span>Spanish Latte</span>
-              <span>•••</span>
-            </div>
-
-            <div className="food-item">
-              <span>Butter Croissant</span>
-              <span>•••</span>
-            </div>
-
-          </div>
-
-          <a href="#menu" className="outline-button">
-            View Full Menu
-          </a>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================
-          BAKEHOUSE
-      ========================= */}
-
-      <section className="bakehouse" id="bakehouse">
-
-        <div className="bakehouse-content">
-
-          <p className="eyebrow">
-            THE BAKEHOUSE
-          </p>
-
-          <h2>
-            Fresh from
-            <br />
-            <em>the oven.</em>
+            <em>every kind of day.</em>
           </h2>
 
           <p>
-            Golden croissants, flaky pastries and little
-            moments of sweetness baked fresh for you.
+            From our oven to your table — thoughtfully made,
+            simply served.
           </p>
-
-          <div className="bakery-tags">
-
-            <span>Croissants</span>
-            <span>•</span>
-            <span>Pain au Chocolat</span>
-            <span>•</span>
-            <span>Cakes</span>
-
-          </div>
-
         </div>
 
+        <div className="menu-divider">
+          <span>BAKEHOUSE</span>
+          <span>•</span>
+          <span>KITCHEN</span>
+          <span>•</span>
+          <span>COFFEE</span>
+        </div>
+
+        {menuCategories.map((category) => (
+          <div className="menu-list" key={category.title}>
+            <div className="menu-list-header">
+              <h3>{category.title}</h3>
+              <span>{category.subtitle}</span>
+            </div>
+
+            {category.items.map((item) => (
+              <div className="menu-item" key={item.name}>
+                <div className="menu-item-info">
+                  <h4>{item.name}</h4>
+                  <p>{item.description}</p>
+                </div>
+
+                <span className="price">{item.price}</span>
+              </div>
+            ))}
+          </div>
+        ))}
+
+        <p className="menu-note">
+          * Menu and prices are subject to seasonal changes.
+        </p>
       </section>
 
+      {/* SIGNATURES */}
+      <section className="signature-section">
+        <div className="signature-decoration"></div>
 
-      {/* =========================
-          VISIT
-      ========================= */}
-
-      <section className="visit" id="visit">
-
-        <div className="visit-content">
-
-          <p className="eyebrow dark">
-            COME SAY HELLO
-          </p>
+        <div className="signature-content">
+          <p className="section-label">THE SOBREMESA WAY</p>
 
           <h2>
-            Find us in
+            Made slowly.
             <br />
-            <em>Jubilee Hills.</em>
+            <em>Enjoyed fully.</em>
           </h2>
 
-          <p className="body-text">
-            8-2-293/82/A/593, Road Number 31,
-            Aditya Enclave, Venkatagiri,
-            Jubilee Hills, Hyderabad.
+          <p>
+            We believe the best moments aren't rushed.
+            They're shared over coffee, warm pastries and
+            conversations that last a little longer.
           </p>
 
-          <div className="visit-info">
-
-            <div>
-              <small>OPEN DAILY</small>
-              <p>10:00 AM – 10:30 PM</p>
-            </div>
-
-            <div>
-              <small>CALL US</small>
-              <p>+91 78427 76820</p>
-            </div>
-
-          </div>
-
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Sobremesa+Cafe+Jubilee+Hills+Hyderabad"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button dark-button"
-          >
-            Get Directions
+          <a href="#menu" className="text-link">
+            Discover the menu <span>→</span>
           </a>
-
         </div>
-
-
-        <div className="visit-image">
-
-          <img
-            src={cafeInterior}
-            alt="Inside Sobremesa Cafe"
-          />
-
-        </div>
-
       </section>
 
+      {/* BAKEHOUSE */}
+      <section className="bakehouse-section" id="bakehouse">
+        <div className="bakehouse-card">
+          <div className="bakehouse-number">02</div>
 
-      {/* =========================
-          FOOTER
-      ========================= */}
+          <p className="section-label">FROM THE BAKEHOUSE</p>
 
-      <footer>
+          <h2>
+            Fresh every
+            <br />
+            <em>morning.</em>
+          </h2>
 
-        <div className="footer-logo">
-          SOBREMESA
+          <p>
+            Golden croissants, soft cinnamon rolls, delicate
+            pastries and breads made with patience.
+          </p>
+
+          <div className="bakehouse-details">
+            <span>HANDCRAFTED</span>
+            <span>•</span>
+            <span>FRESH DAILY</span>
+          </div>
+        </div>
+      </section>
+
+      {/* VISIT */}
+      <section className="visit-section" id="visit">
+        <div className="visit-header">
+          <p className="section-label">COME SAY HELLO</p>
+
+          <h2>
+            Your table
+            <br />
+            <em>is waiting.</em>
+          </h2>
         </div>
 
-        <p className="footer-tagline">
-          CAFÉ • BAKEHOUSE • KITCHEN
-        </p>
+        <div className="visit-grid">
+          <div className="visit-card">
+            <span className="visit-label">ADDRESS</span>
+            <p>
+              Jubilee Hills
+              <br />
+              Hyderabad, Telangana
+            </p>
+          </div>
 
-        <div className="footer-links">
+          <div className="visit-card">
+            <span className="visit-label">HOURS</span>
+            <p>
+              Monday — Sunday
+              <br />
+              8:00 AM — 11:00 PM
+            </p>
+          </div>
 
-          <a href="#about">About</a>
-          <a href="#menu">Menu</a>
-          <a href="#bakehouse">Bakehouse</a>
-          <a href="#visit">Visit</a>
-
+          <div className="visit-card">
+            <span className="visit-label">CONTACT</span>
+            <p>
+              +91 00000 00000
+              <br />
+              hello@sobremesa.com
+            </p>
+          </div>
         </div>
 
-        <p className="copyright">
-          © 2026 Sobremesa • Portfolio Website Concept
-        </p>
+        <a href="#top" className="visit-button">
+          Back to top ↑
+        </a>
+      </section>
 
+      {/* FOOTER */}
+      <footer className="footer">
+        <div className="footer-logo">SOBREMESA</div>
+
+        <p>A place to linger.</p>
+
+        <div className="footer-bottom">
+          <span>© 2026 Sobremesa</span>
+          <span>Made with intention.</span>
+        </div>
       </footer>
 
     </div>
