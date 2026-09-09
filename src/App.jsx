@@ -165,8 +165,8 @@ function App() {
         </div>
 
         <div className="hero-bottom">
-          <span>EST. 2021</span>
-          <span>HYDERABAD</span>
+          
+          
         </div>
       </section>
 
